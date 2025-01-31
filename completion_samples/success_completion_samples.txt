@@ -1,0 +1,156 @@
+
+
+==============
+<think> Clearly, we are dealing with the numbers 84, 18, and 3. Let's start by looking at each number and thinking about how to combine them to approach 30.
+Given that 30 is very close to 84/2, it could mean we should consider division in the formulation.
+Multiplying 18 and 3 would give us 54, much larger than 30, so let's skip that for now.
+Using 18 and dividing by 3 obviously gives us 6, not what we need.
+Now remember 84 is the largest number, so we should think about subtracting smaller numbers from 84 to reach closer to our answer.
+Subtracting 18 from 84 gives us 66, and dividing this by 3 would give us:
+66 / 3 = 22, still not 30.
+To get closer to 30, we should try subtracting 18 from another large number and see where that gets us:
+(84 - 18) / 3 = 66 / 3 = 22.
+Clearly, 22 is too far from our target of 30, so we need to try using 18 in a different way.
+Now, let's consider using the numbers in a different order and think about subtraction and multiplication:
+Try 18 * 3 = 54 and then subtract 24 from 84. We need to find a number that when subtracted from 84 gives 30.
+84 - 54 = 30. So if we do 84 - (18 * 3), we get 30.
+There we go! That's the equation we are looking for.</think>
+<answer> (84 - (18 * 3)) </answer>
+
+==============
+<think>Firstly, let's consider if we can create 79 directly using two of the given numbers. The number 72 is close but not quite there. Maybe the equation involves addition or subtraction of 7 or 8, but 27, 21, and 41 seem too large to achieve that directly. We can also evaluate division and multiplication, but these operations typically lead to numbers under 20 or above 80, which doesn't help us reach 79.</think>
+<think>Given that the target number is far from the nearest starting number (27), let's work on manipulating numbers to get close. I notice that 27 + 41 = 68, which is far from 79 and too low. But if we explore the operations with our chosen numbers, we may find the solution.</think>
+<think>Let's consider using 21 and 72 in conjunction with 41. An operation that multiplies or divides 21 or 41 could potentially lead us closer to 79. But we'll start from 21 and add to it using the remaining numbers.</think>
+<think>Let's try adding 41 and see if we can reach closely to 79. That's 21 + 41 = 62. We need 17 more to make 79. Now, consider the possibility of reducing our goal by dividing or using the remaining numbers. We cannot divide 72, but we can subtract from 72.</think>
+<think>Notice that 72 - 41 = 31, and if we add 27, this gives 31 + 27 = 58. Now we need 21 more to reach 79, which is exactly the sum of 21 and 72 - 41.</think>
+</think>
+<answer> (21 + 72 - 41) + 27 </answer>
+</answer>
+
+==============
+<think> Since we want to arrive at 30 and given the numbers 24, 65, and 59, intuitively, we need to utilize some subtraction. The number 65 is significantly higher than 30, so it seems like it might subtract a substantial amount from it at one point to make 30. Given 59 is close to 30, we could consider the feasibility of it as well. </think>
+Let's start by looking at the possibility of subtracting 59 from 65 to get a reasonable value to work with.
+<think> Adding 24 to the result of subtracting 59 from 65 should keep us moving towards our target of 30. </think>
+<think> If we perform 65 - 59 = 6 first, then adding 24 to this result: 6 + 24 = 30, this would give us our desired result. Hence, the equation is: 65 - 59 + 24 = 30. </think>
+<answer> 65 - 59 + 24 </answer>
+
+==============
+<think>First, let's consider the possibility of using multiplication and division first since these can yield larger numbers (like 72) that can be closer to 12. The numbers we have are 72, 2, and 3. Multiplying 2 and 3 gives us 6, and then dividing 72 by 6 gives us 12. Thus, the equation could be 72 / (2 * 3) which equals 12. </think>
+<answer> 72 / (2 * 3) </answer>
+
+==============
+<think> Since the target is 47, and I am aiming to use each number, 33, 84, 38, and 34 only once, I'll try different permutations of the numbers and operations. Let's start with multiplication and division since they can significantly increase or decrease values to make the target more achievable.</think>
+<think> Let's consider the pattern with 84: if we try to use this in conjunction with another number, like 33 and 38, we should see what multiplication would yield. 84 * 38 = 3212, which is already large and far from our target. Dividing 84 by any of these numbers will not help as the results will be under 47. </think>
+<think> Let's move to operations between 33 and 38. Adding or subtracting these numbers yields: 38 - 33 = 5 or 33 - 38 = -5. We want the result to fit into how we can use the remaining numbers, 84 and 34, to reach 47. </think>
+<think> So, we need to somehow manipulate 33, 38, and 84 with 34 to get 47. Adding 34 to 33 + 38 = 71 and then dividing by 84 does not work since we only have one number 84 to divide into 71+34. </think>
+<think> Now let's try another combination using operations. If we divide 84 by 34, we get 2.47, which is not an integer and hence not useful here. Let's look at another combination considering subtraction: if we subtract 38 from 84, we get 46, close to our target but slightly above. We need to make 47, so an adjustment is required. </think>
+<think> I believe the path is to take 38 from 84 and then use the subtraction approach with 33 and 34. If we subtract 33 from 34, we get 1, which is not immediately aligned, but subtracting 1 from 46 gives us 45, not quite there. Consequently, we need to find how 84 - 38 = 46 can be adjusted by 33 and 34 to be 47.</think>
+<think> I realize adding 33 to 46 doesn't quite work. But subtracting 33 from 46 (another approach for another problem) would give us steps where I can align the remaining numbers. 34 is nearly equivalent to subtracting 34 from 46. Thus, (84 - 38) + (34 - 33) = 46+1 = 47. </think>
+<answer> (84 - 38) + (34 - 33) </answer>
+
+==============
+<think> 
+Firstly, I need to create an equation using the numbers 72, 5, and 49 that results in 28, and each number can only be used once. I'll start by analyzing which combination of arithmetic operations might help. The number 72 seems too large to get down to 28 using multiplication or division with 49 or 5. Therefore, I will focus on using subtraction and addition.
+</think>
+<answer>
+(72 - 49) + 5
+</answer>
+Let me work through the steps:
+<think>
+(72 - 49) + 5 = 23 + 5
+</think>
+<answer>
+(72 - 49) + 5 = 23 + 5 = 28
+</answer>
+Therefore, the final equation is <answer>(72 - 49) + 5</answer>.
+
+==============
+<think> I need to create an equation that equals 83 using the numbers 98, 92, and 77, with each number used only once and basic arithmetic operations. 
+Starting with the numbers, I see that 98 is the largest number, so I should consider what it could be subtracted by or added to. Subtracting or dividing by smaller numbers could get me closer to 83.
+First, let's try to use addition. If I can find a way to get 98 - something close to 83, I might be on to something.
+98 - 92 = 6, 98 - 77 = 21, 92 - 77 = 15
+None of these closely match 83. Then let's try a tricky addition.
+98 - 92 = 6 and if I use 92 + 77, I could get 75 + 9, 75 + some other numbers, etc.
+Let's try: 77 + 92 = 169 - 86 = 83, but 86 isn't in the list of numbers.
+What if I consider multiplication with one of the numbers:
+(92 * 1) + 77 = 92 + 77 = 169 / 2 = 84.5 not 83.
+Then, let's consider if combining subtraction and addition or multiplication works. If I first consider taking away 92 from 98, and then use the result with 77:
+98 - 92 = 6, 6 + 77 = 83
+This is the right path. </think>
+<answer>(98 - 92) + 77</answer>
+
+==============
+<think> First, I would like to simplify the consideration of multiplication and division because they significantly affect the outcome and are more likely to achieve a precise sum when applied to the smallest remaining numbers. That leaves addition and subtraction. If I were to consider the subtraction first, I might want to reduce the larger numbers to make reaching 70 feasible. </think>
+Given the numbers [5, 17, 84, 8], subtracting the smallest number (5) from the largest (84) leaves 79. If only addition is considered, adding 8 would bring us close to 70, making 84 - 5 + 8. This doesn't directly solve the problem, but it gets very close. I can adjust by alternately using subtraction and addition.</think>
+<think> Considering the equation 84 - 5 + 8 - 17 = 70, the steps are as follows:
+1. Start with 84.
+2. Subtract 5, we get 79.
+3. Add 8, making it 84 + 8 = 92.
+4. Subtract 17, we obtain the final sum of 70.
+This adheres to the rule of using each number exactly once and follows the mathematical operations as desired.
+</think>
+<answer> 84 - 5 + 8 - 17 </answer>
+
+==============
+<think> First, let's consider the numbers 3 and 77. While 77 is considerably bigger than 64, adding or subtracting 3 could be a starting point. Multiplying 3 by any number would make the result larger, and dividing 77 by 3 would not necessarily reduce the number to 64. Let's begin with the subtraction idea: 77 - 3 = 74. Now, we need to get the remaining 10 to reach 64. Substituting 74 with 10 and then subtracting will get us closer to 64: 74 - 10 = 64. </think>
+<answer> (77 - 3) - 10 </answer>
+
+==============
+<think> I need to use the numbers 51, 33, and 57. We need to combine them using arithmetic operations to achieve the result 27. 33 seems to be the easiest to use in this case because it's a neat round number. So I will use addition and subtraction with the other two numbers to get to 27. </think>
+Since we need to get 27 and 33 is close, let's see if we can use 33 in any way to help us reach the result.
+<think> I need to subtract from 33 to get 27, as 33 - 6 = 27. Now I need to find if I can generate 6 using the other numbers, 51 and 57. </think>
+Now, let's look at using 51 and 57.
+<think> I can subtract 51 from 57 to make 6. So the expression becomes 57 - 51 = 6. Now, putting this all together the equation looks like this:
+33 - (57 - 51) = 27
+</think>
+<answer> 33 - (57 - 51) </answer>
+
+==============
+<think> I need to combine the provided numbers [87, 18, 29] using basic arithmetic operations to make the expression equal to 40. I'll start by examining the numbers closely to find a combination that might work.
+I notice that 87 and 18 do not make 40 easily when combined directly. I think I might need to use 29 in some operation. The numbers 87 and 18 can be manipulated by subtracting 29 from 87, resulting in 58, but then I need to subtract another 18 to get down to the target of 40.
+So, this might be a good equation: 58 - 18 = 40.
+But we are restricted to using each number only once. Therefore, let's see if 87 can be transformed in another way, maybe subtracting 29 from 87 and then subtracting the result of 18:
+(87 - 29) - 18 = 40.
+This satisfies the requirement of using each number only once and equals 40.
+</think>
+<answer>(87 - 29) - 18</answer>
+
+==============
+<think>First, let's think about what we need to add, subtract, multiply, or divide by to get from these numbers to 56. Given the numbers 19, 43, and 80, it seems we might need to use division or subtraction to adjust the total down. Multiplication or addition could make the numbers too large or too small.</think>
+<think>Considering 43 as a significant starting point, if we can bring the other numbers close to 56, we might consider 80 to be our target after some manipulation. 
+If we subtract 19 from 43 first, we get 24. Now, we need to get to 56, so we need to add 32 to 24, which is achieved by 80 - 48, but 48 is not one of the original numbers. 
+Instead, let's think of the inverse: to get from 24 to 56 in one step, we need to add 32. We can see that 32 is 4 times 8, and 8 can be generated from 80 - 72, but none of these are part of the initial list either. 
+So, let's think about just getting 43 to be close to 56 with the remaining operation. </think>
+<think>80 - 43 = 37, which is not quite 56, but we can still use it. Now, to get from 37 closer to 56, we can try using the 19. 56 - 37 = 19. This can be seen as multiplying 19 by 1, but we have no other number to do this directly, so we'll use division or another approach.
+If we examine 80 - (43 * 1) = 37 again in a different context, we see that we can invert the equation, thus returning to our original numbers in another method. Doing (80 - 43) + 19 = 56.
+</think>
+<answer>(80 - 43) + 19</answer>
+
+==============
+<think> First, I need to consider the three numbers available: 88, 98, and 57. The goal is to produce a result of 67 using basic arithmetic operations, with one of each of these digits plus the operations allowed. Let's try some combinations starting with subtraction first, as it often simplifies large numbers quickly. </think>
+<think> Subtracting 57 from 98 gives us 41. Now we have 88 and 41 to work with. If we subtract 41 from 88, we get 47. However, we need 67, not 47. </think>
+<think> Trying addition, if I add 57 to 98, I get 155, which is far from 67. As multiplication and division ensure the number we get is either a large or a small fraction of the starting number, I will focus on the addition and subtraction paths further. </think>
+<think> Moving on, if I try another subtraction option: since 98 is quite close to 88, I might need to think about adding or multiplying strategically. Combining 57 and 88 with addition or multiplication does not simplify effectively towards 67. </think>
+<think> Another approach is to think about what combination of operations would lead to 67 directly. Notice that operating with subtraction will help in creating the final result more efficiently. If I try to use 88 and 98 directly, I can consider 98 minus 88 equals 10. Now, if I add 57 to 10, I get 67. </think>
+<answer> 98 - 88 + 57 </answer>
+
+==============
+<think> I need to arrive at the number 84 using the numbers 90, 57, and 51. Let's first try multiplication and division, as they have more significant effects when used with the available numbers.
+Multiplying 90 by any of the other two numbers would give a product much larger than 84. Sure, 90 * 57 = 5130 and 90 * 51 = 4590 are far beyond 84.
+Next, let's consider division. If I divide 90 by 57 or 51, the results will be less than 2, which certainly won't help reach 84. In fact, 90 / 51 and 90 / 57 both give numbers too low to interact with 57 or 51 to reach our target.
+Multiplication and division by these numbers aren't yielding results that bring us close to 84. Let's then reconsider addition and subtraction, as these operations can bring us closer to 84 in a manageable way.
+Adding or subtracting 57 or 51 from 90 or 51 does not bring us to 84. For instance, 90 - 57 = 33, 90 - 51 = 39, 57 + 90 = 147, and 51 + 90 = 141.
+Let's try combining operations in another way. Given that 90 is the largest number, we might try 'subtracting' 57 and 'adding' 51, and check if this combination can lead us to 84.
+</think>
+<think> Performing the combination 90 - 57 + 51 gives 84. Now I confirm that this aligns with the equation we need.
+</think>
+<answer> (90 - 57) + 51 </answer>
+
+==============
+<think>First, I will take a look at the numbers provided: 38, 59, and 12. My goal is to get 85 using each of these numbers exactly once, and only using basic arithmetic operations. I should note that there may be multiple solutions, but I will focus on a logical sequence that reflects a straightforward path to the solution. 
+An obvious first step would be to check the sum of all three numbers as the numbers are not large and two might help get close to 85. Their sum is 38 + 59 + 12 = 109, which is not 85 but is closer. The difference is 24, which might be achieved by subtraction. 
+I will start by substraction 12 from the sum. </think>
+<answer>(38 + 59) - 12</answer>
+This gives us 97 - 12, which is 85.</answer>
+</think>
+<answer> (38 + 59) - 12 </answer>

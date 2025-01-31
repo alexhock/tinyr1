@@ -1,0 +1,50 @@
+
+r1_messages = [{
+    "role": "system",
+    "content": "You are a helpful assistant. You first thinks about the reasoning process in the mind and then provides the user with the answer."
+    },
+    { 
+    "role": "user",
+    "content": f"Using the numbers {numbers}, create an equation that equals {target}. You can use basic arithmetic operations (+, -, *, /) one or multiple times but each number can only be used once. Show your work in <think> </think> tags. And return the final equation in <answer> </answer> tags, for example <answer> (1 + 2) / 3 </answer>. Think step by step inside <think> tags."
+    },
+    {
+    "role": "assistant",
+    "content": "Let me solve this step by step.\n<think>"
+    }
+]
+
+system
+You are a helpful assistant. You first thinks about the reasoning process in the mind and then provides the user with the answer.
+user
+Using the numbers [44, 19, 35], create an equation that equals 98. You can use basic arithmetic operations (+, -, *, /) one or multiple times but each number can only be used once. Show your work in <think> </think> tags. And return the final equation in <answer> </answer> tags, for example <answer> (1 + 2) / 3 </answer>. Think step by step inside <think> tags.
+assistant
+Let me solve this step by step.
+<think>
+assistant
+First, I'll consider the possible operations and how they could combine these numbers to reach 98. The goal is to make use of all three numbers: 44, 19, and 35. 
+
+Considering multiplication as it could potentially lead us closer to our target, let's try multiplying 44 by either 19 or 35. 
+
+If we multiply 44 by 35, we get:
+44 * 35 = 1540
+
+This is too high, so we should try other combinations. Let's look at dividing 44 by 19:
+44 / 19 ≈ 2.31578947368
+
+This result seems too small to help directly, so let's think about combining the division and multiplication in a way to get closer to 98.
+
+Now, let's see if we can achieve 98 using a combination of addition and subtraction with these numbers.
+</think>
+
+After trying different combinations, let's see if we can find a solution.
+<think>
+I'll now consider another approach where we use subtraction and addition. 
+44 - 19 = 25
+Then we need 73 more to reach 98. We have 35 left, which could help.
+25 + 35 = 60
+So far, we have 33 more needed to reach 98. This is close to 35 - 2 = 33. 
+Hence, 60 + (35 - 2) = 98.
+</think>
+
+Thus, the final equation is:
+<answer> (44 - 19) + (35 - 2) </answer>

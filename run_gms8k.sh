@@ -1,0 +1,1 @@
+accelerate launch --num_processes 3 --config_file deepspeed_zero3.yaml run_r1_gms8k_grpo.py --config grpo-qwen-2.5-3b-deepseek-r1-gms8k.yaml > output_gms8k.log

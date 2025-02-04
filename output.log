@@ -1,0 +1,312 @@
+[2025-01-31 21:48:25,780] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-01-31 21:48:30,277] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-01-31 21:48:30,376] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-01-31 21:48:30,378] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+INFO 01-31 21:48:31 __init__.py:183] Automatically detected platform cuda.
+INFO 01-31 21:48:31 __init__.py:183] Automatically detected platform cuda.
+INFO 01-31 21:48:31 __init__.py:183] Automatically detected platform cuda.
+[2025-01-31 21:48:31,891] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-31 21:48:31,891] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-01-31 21:48:32,051] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-31 21:48:32,062] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-31 21:48:34,191] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:48:34,655] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:48:35,194] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:48:35,995] [INFO] [partition_parameters.py:348:__exit__] finished initializing model - num_params = 435, num_elems = 3.40B
+[2025-01-31 21:49:01,126] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:01,139] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:02,391] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:02,555] [INFO] [partition_parameters.py:348:__exit__] finished initializing model - num_params = 870, num_elems = 6.79B
+INFO 01-31 21:49:13 config.py:520] This model supports multiple tasks: {'score', 'embed', 'classify', 'reward', 'generate'}. Defaulting to 'generate'.
+INFO 01-31 21:49:13 llm_engine.py:232] Initializing an LLM engine (v0.7.0) with config: model='Qwen/Qwen2.5-3B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen2.5-3B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda:3, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=Qwen/Qwen2.5-3B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 01-31 21:49:14 cuda.py:225] Using Flash Attention backend.
+INFO 01-31 21:49:14 model_runner.py:1110] Starting to load model Qwen/Qwen2.5-3B-Instruct...
+INFO 01-31 21:49:14 weight_utils.py:251] Using model weights format ['*.safetensors']
+INFO 01-31 21:49:16 model_runner.py:1115] Loading model weights took 0.0000 GB
+INFO 01-31 21:49:18 worker.py:266] Memory profiling takes 2.16 seconds
+INFO 01-31 21:49:18 worker.py:266] the current vLLM instance can use total_gpu_memory (79.15GiB) x gpu_memory_utilization (0.50) = 39.58GiB
+INFO 01-31 21:49:18 worker.py:266] model weights take 0.00GiB; non_torch_memory takes 0.00GiB; PyTorch activation peak memory takes 0.00GiB; the rest of the memory reserved for KV Cache is 39.58GiB.
+INFO 01-31 21:49:18 executor_base.py:108] # CUDA blocks: 72045, # CPU blocks: 7281
+INFO 01-31 21:49:18 executor_base.py:113] Maximum concurrency for 32768 tokens per request: 35.18x
+INFO 01-31 21:49:21 model_runner.py:1430] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 01-31 21:49:35 model_runner.py:1558] Graph capturing finished in 14 secs, took 0.00 GiB
+INFO 01-31 21:49:35 llm_engine.py:429] init engine (profile, create kv cache, warmup model) took 18.82 seconds
+[2025-01-31 21:49:35,644] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed info: version=0.15.4, git-hash=unknown, git-branch=unknown
+[2025-01-31 21:49:35,644] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:35,645] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:35,645] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 3
+[2025-01-31 21:49:35,655] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-01-31 21:49:35,656] [INFO] [logging.py:128:log_dist] [Rank 0] Creating ZeRO Offload
+[2025-01-31 21:49:35,895] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2025-01-31 21:49:35,896] [INFO] [utils.py:782:see_memory_usage] MA 3.84 GB         Max_MA 3.84 GB         CA 3.92 GB         Max_CA 4 GB 
+[2025-01-31 21:49:35,896] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 19.81 GB, percent = 2.3%
+Parameter Offload: Total persistent parameters: 241664 in 181 params
+[2025-01-31 21:49:36,148] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2025-01-31 21:49:36,149] [INFO] [utils.py:782:see_memory_usage] MA 3.84 GB         Max_MA 3.84 GB         CA 3.92 GB         Max_CA 4 GB 
+[2025-01-31 21:49:36,149] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 19.83 GB, percent = 2.3%
+[2025-01-31 21:49:36,150] [INFO] [config.py:999:print] DeepSpeedEngine configuration:
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   amp_enabled .................. False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   amp_params ................... False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   bfloat16_enabled ............. True
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   bfloat16_immediate_grad_update  False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   checkpoint_parallel_write_pipeline  False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   checkpoint_tag_validation_enabled  True
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   checkpoint_tag_validation_fail  False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fa0e47033d0>
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   communication_data_type ...... None
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   curriculum_enabled_legacy .... False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   curriculum_params_legacy ..... False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   data_efficiency_enabled ...... False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   dataloader_drop_last ......... False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   disable_allgather ............ False
+[2025-01-31 21:49:36,151] [INFO] [config.py:1003:print]   dump_state ................... False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   dynamic_loss_scale_args ...... None
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_enabled ........... False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_gas_boundary_resolution  1
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_layer_num ......... 0
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_max_iter .......... 100
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_stability ......... 1e-06
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_tol ............... 0.01
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   eigenvalue_verbose ........... False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   elasticity_enabled ........... False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   fp16_auto_cast ............... None
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   fp16_enabled ................. False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   fp16_master_weights_and_gradients  False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   global_rank .................. 0
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   grad_accum_dtype ............. None
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   gradient_accumulation_steps .. 8
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   gradient_clipping ............ 1.0
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   gradient_predivide_factor .... 1.0
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   graph_harvesting ............. False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   initial_dynamic_scale ........ 1
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   load_universal_checkpoint .... False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   loss_scale ................... 1.0
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   memory_breakdown ............. False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   mics_hierarchial_params_gather  False
+[2025-01-31 21:49:36,152] [INFO] [config.py:1003:print]   mics_shard_size .............. -1
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   optimizer_legacy_fusion ...... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   optimizer_name ............... None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   optimizer_params ............. None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   pld_enabled .................. False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   pld_params ................... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   prescale_gradients ........... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   scheduler_name ............... None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   scheduler_params ............. None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   seq_parallel_communication_data_type  torch.float32
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   sparse_attention ............. None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   sparse_gradients_enabled ..... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   steps_per_print .............. inf
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   timers_config ................ enabled=True synchronized=True
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   train_batch_size ............. 24
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   train_micro_batch_size_per_gpu  1
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   use_data_before_expert_parallel_  False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   use_node_local_storage ....... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   wall_clock_breakdown ......... False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   weight_quantization_config ... None
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   world_size ................... 3
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   zero_allow_untested_optimizer  False
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2025-01-31 21:49:36,153] [INFO] [config.py:1003:print]   zero_enabled ................. True
+[2025-01-31 21:49:36,154] [INFO] [config.py:1003:print]   zero_force_ds_cpu_optimizer .. True
+[2025-01-31 21:49:36,154] [INFO] [config.py:1003:print]   zero_optimization_stage ...... 3
+[2025-01-31 21:49:36,154] [INFO] [config.py:989:print_user_config]   json = {
+    "train_batch_size": 24, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 8, 
+    "zero_optimization": {
+        "stage": 3, 
+        "offload_optimizer": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "offload_param": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "zero_optimization.reduce_bucket_size": 4.194304e+06, 
+    "zero_optimization.stage3_param_persistence_threshold": 2.048000e+04, 
+    "zero_optimization.stage3_prefetch_bucket_size": 3.774874e+06
+}
+Parameter Offload: Total persistent parameters: 241664 in 181 params
+{'loss': -0.0, 'grad_norm': 0.13132892479309258, 'learning_rate': 5.88235294117647e-08, 'completion_length': 519.0651226043701, 'rewards/format_reward_func': 0.25000000558793545, 'rewards/equation_reward_func': 0.046875001629814506, 'reward': 0.29687500558793545, 'reward_std': 0.4661826826632023, 'kl': 0.0, 'epoch': 0.0}
+{'loss': 0.0, 'grad_norm': 0.12221194660966346, 'learning_rate': 1.176470588235294e-07, 'completion_length': 482.9557456970215, 'rewards/format_reward_func': 0.27604167722165585, 'rewards/equation_reward_func': 0.052083334885537624, 'reward': 0.32812500558793545, 'reward_std': 0.4809066541492939, 'kl': 0.00039184093475341797, 'epoch': 0.0}
+{'loss': 0.0, 'grad_norm': 0.11698213603275273, 'learning_rate': 1.764705882352941e-07, 'completion_length': 488.69011306762695, 'rewards/format_reward_func': 0.2343750069849193, 'rewards/equation_reward_func': 0.09635416930541396, 'reward': 0.330729172565043, 'reward_std': 0.47954071685671806, 'kl': 0.00038361549377441406, 'epoch': 0.0}
+{'loss': 0.0, 'grad_norm': 0.14147214724313506, 'learning_rate': 2.352941176470588e-07, 'completion_length': 517.8619956970215, 'rewards/format_reward_func': 0.27864584047347307, 'rewards/equation_reward_func': 0.05989583395421505, 'reward': 0.33854167722165585, 'reward_std': 0.48855280689895153, 'kl': 0.0003917217254638672, 'epoch': 0.0}
+{'loss': 0.0, 'grad_norm': 0.1403661808775809, 'learning_rate': 2.941176470588235e-07, 'completion_length': 501.63543128967285, 'rewards/format_reward_func': 0.2708333428017795, 'rewards/equation_reward_func': 0.0677083341870457, 'reward': 0.338541672565043, 'reward_std': 0.4723861115053296, 'kl': 0.0003943443298339844, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.1274006534452246, 'learning_rate': 3.529411764705882e-07, 'completion_length': 468.24480628967285, 'rewards/format_reward_func': 0.312500006519258, 'rewards/equation_reward_func': 0.06770833511836827, 'reward': 0.3802083460614085, 'reward_std': 0.509306687861681, 'kl': 0.00046753883361816406, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.12852469573745748, 'learning_rate': 4.117647058823529e-07, 'completion_length': 466.4557399749756, 'rewards/format_reward_func': 0.34114584047347307, 'rewards/equation_reward_func': 0.07812500302679837, 'reward': 0.41927084140479565, 'reward_std': 0.5267587527632713, 'kl': 0.0005958080291748047, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.12317743356121315, 'learning_rate': 4.705882352941176e-07, 'completion_length': 501.34376525878906, 'rewards/format_reward_func': 0.40104167722165585, 'rewards/equation_reward_func': 0.04687500116415322, 'reward': 0.447916679084301, 'reward_std': 0.5135570503771305, 'kl': 0.0009009838104248047, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.12491502334521805, 'learning_rate': 4.999956573574533e-07, 'completion_length': 452.38282012939453, 'rewards/format_reward_func': 0.49218751676380634, 'rewards/equation_reward_func': 0.0416666679084301, 'reward': 0.5338541846722364, 'reward_std': 0.5289915706962347, 'kl': 0.0014789104461669922, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.10936968411122065, 'learning_rate': 4.999609171222845e-07, 'completion_length': 463.2083492279053, 'rewards/format_reward_func': 0.6406250242143869, 'rewards/equation_reward_func': 0.07812500186264515, 'reward': 0.7187500260770321, 'reward_std': 0.5308583695441484, 'kl': 0.0035457611083984375, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.10271659198601331, 'learning_rate': 4.998914414795667e-07, 'completion_length': 483.88022232055664, 'rewards/format_reward_func': 0.7187500149011612, 'rewards/equation_reward_func': 0.06770833465270698, 'reward': 0.7864583507180214, 'reward_std': 0.49242923595011234, 'kl': 0.006134986877441406, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.09885111643058872, 'learning_rate': 4.997872400838682e-07, 'completion_length': 468.69792556762695, 'rewards/format_reward_func': 0.7265625186264515, 'rewards/equation_reward_func': 0.07291666837409139, 'reward': 0.7994791828095913, 'reward_std': 0.509644690901041, 'kl': 0.0060272216796875, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.08250529831097206, 'learning_rate': 4.996483274153644e-07, 'completion_length': 464.6588649749756, 'rewards/format_reward_func': 0.7708333507180214, 'rewards/equation_reward_func': 0.10156250232830644, 'reward': 0.8723958618938923, 'reward_std': 0.5233290866017342, 'kl': 0.00751495361328125, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.0935887794600047, 'learning_rate': 4.994747227778257e-07, 'completion_length': 478.9114646911621, 'rewards/format_reward_func': 0.7838541828095913, 'rewards/equation_reward_func': 0.07812500186264515, 'reward': 0.8619791902601719, 'reward_std': 0.47284395061433315, 'kl': 0.0074329376220703125, 'epoch': 0.01}
+{'loss': 0.0, 'grad_norm': 0.07147393187411577, 'learning_rate': 4.992664502959351e-07, 'completion_length': 490.30990982055664, 'rewards/format_reward_func': 0.8411458544433117, 'rewards/equation_reward_func': 0.06250000139698386, 'reward': 0.9036458507180214, 'reward_std': 0.37275269255042076, 'kl': 0.009296417236328125, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.08704671396682395, 'learning_rate': 4.990235389119352e-07, 'completion_length': 430.528657913208, 'rewards/format_reward_func': 0.9244791902601719, 'rewards/equation_reward_func': 0.1354166695382446, 'reward': 1.0598958618938923, 'reward_std': 0.3723663967102766, 'kl': 0.011627197265625, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.07960373565560872, 'learning_rate': 4.987460223816067e-07, 'completion_length': 440.8984489440918, 'rewards/format_reward_func': 0.9270833544433117, 'rewards/equation_reward_func': 0.08333333535119891, 'reward': 1.010416690260172, 'reward_std': 0.28312464570626616, 'kl': 0.011962890625, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.08554495948046006, 'learning_rate': 4.984339392695777e-07, 'completion_length': 410.5416774749756, 'rewards/format_reward_func': 0.9609375186264515, 'rewards/equation_reward_func': 0.16666667186655104, 'reward': 1.1276042014360428, 'reward_std': 0.33015657402575016, 'kl': 0.01425933837890625, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.07834684899551482, 'learning_rate': 4.980873329439644e-07, 'completion_length': 420.231782913208, 'rewards/format_reward_func': 0.9557291865348816, 'rewards/equation_reward_func': 0.12239583698101342, 'reward': 1.078125037252903, 'reward_std': 0.2752070059068501, 'kl': 0.014171600341796875, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.06258927309843951, 'learning_rate': 4.977062515703443e-07, 'completion_length': 441.4479293823242, 'rewards/format_reward_func': 0.9479166865348816, 'rewards/equation_reward_func': 0.13020833767950535, 'reward': 1.0781250409781933, 'reward_std': 0.26590660493820906, 'kl': 0.0152740478515625, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.07128679572979907, 'learning_rate': 4.972907481050636e-07, 'completion_length': 415.9531364440918, 'rewards/format_reward_func': 0.9531250223517418, 'rewards/equation_reward_func': 0.11197916837409139, 'reward': 1.0651041939854622, 'reward_std': 0.2658396726474166, 'kl': 0.01616668701171875, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.08270454138158909, 'learning_rate': 4.968408802878777e-07, 'completion_length': 416.8802185058594, 'rewards/format_reward_func': 0.9609375186264515, 'rewards/equation_reward_func': 0.10677083651535213, 'reward': 1.0677083656191826, 'reward_std': 0.25024445867165923, 'kl': 0.019649505615234375, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.06628486188907241, 'learning_rate': 4.963567106339276e-07, 'completion_length': 413.92188835144043, 'rewards/format_reward_func': 0.9531250186264515, 'rewards/equation_reward_func': 0.09895833558402956, 'reward': 1.0520833656191826, 'reward_std': 0.2784889619797468, 'kl': 0.01850128173828125, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.07934399306214265, 'learning_rate': 4.958383064250524e-07, 'completion_length': 423.9166793823242, 'rewards/format_reward_func': 0.958333358168602, 'rewards/equation_reward_func': 0.16145833814516664, 'reward': 1.1197917014360428, 'reward_std': 0.3329517808742821, 'kl': 0.0212860107421875, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.0896747365083403, 'learning_rate': 4.952857397004401e-07, 'completion_length': 410.11980056762695, 'rewards/format_reward_func': 0.9661458544433117, 'rewards/equation_reward_func': 0.177083337912336, 'reward': 1.1432292088866234, 'reward_std': 0.3420177483931184, 'kl': 0.019805908203125, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.09152583280508042, 'learning_rate': 4.946990872466164e-07, 'completion_length': 393.05470085144043, 'rewards/format_reward_func': 0.9817708507180214, 'rewards/equation_reward_func': 0.16666667070239782, 'reward': 1.1484375447034836, 'reward_std': 0.2822945797815919, 'kl': 0.02066802978515625, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.08312048525966152, 'learning_rate': 4.940784305867741e-07, 'completion_length': 411.47917556762695, 'rewards/format_reward_func': 0.9713541865348816, 'rewards/equation_reward_func': 0.16927083814516664, 'reward': 1.140625026077032, 'reward_std': 0.2819337663240731, 'kl': 0.0213623046875, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.06306357377221965, 'learning_rate': 4.934238559694447e-07, 'completion_length': 400.6692810058594, 'rewards/format_reward_func': 0.9817708469927311, 'rewards/equation_reward_func': 0.09114583604969084, 'reward': 1.0729167014360428, 'reward_std': 0.19684165949001908, 'kl': 0.02175140380859375, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.07966582998146807, 'learning_rate': 4.92735454356513e-07, 'completion_length': 390.90625953674316, 'rewards/format_reward_func': 0.9765625149011612, 'rewards/equation_reward_func': 0.1770833390764892, 'reward': 1.1536458805203438, 'reward_std': 0.31555644422769547, 'kl': 0.0244140625, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.07676736180863297, 'learning_rate': 4.920133214105762e-07, 'completion_length': 412.1588592529297, 'rewards/format_reward_func': 0.9843750111758709, 'rewards/equation_reward_func': 0.12500000558793545, 'reward': 1.1093750447034836, 'reward_std': 0.23734131967648864, 'kl': 0.02382659912109375, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.07219760441934167, 'learning_rate': 4.91257557481651e-07, 'completion_length': 399.33594703674316, 'rewards/format_reward_func': 0.9843750111758709, 'rewards/equation_reward_func': 0.12500000232830644, 'reward': 1.109375026077032, 'reward_std': 0.22015698673203588, 'kl': 0.0243377685546875, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.09599954084811128, 'learning_rate': 4.904682675932282e-07, 'completion_length': 371.6588649749756, 'rewards/format_reward_func': 0.971354179084301, 'rewards/equation_reward_func': 0.19010417303070426, 'reward': 1.1614583730697632, 'reward_std': 0.31913524540141225, 'kl': 0.02776336669921875, 'epoch': 0.03}
+{'loss': 0.0, 'grad_norm': 0.09240844642629974, 'learning_rate': 4.896455614276784e-07, 'completion_length': 378.145845413208, 'rewards/format_reward_func': 0.9817708469927311, 'rewards/equation_reward_func': 0.19791667256504297, 'reward': 1.179687537252903, 'reward_std': 0.3055694242939353, 'kl': 0.02880859375, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.06739623395353747, 'learning_rate': 4.887895533110103e-07, 'completion_length': 378.0338649749756, 'rewards/format_reward_func': 0.9739583507180214, 'rewards/equation_reward_func': 0.14062500512227416, 'reward': 1.1145833805203438, 'reward_std': 0.242652740329504, 'kl': 0.03087615966796875, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.09649601819913055, 'learning_rate': 4.87900362196983e-07, 'completion_length': 369.6354293823242, 'rewards/format_reward_func': 0.9739583469927311, 'rewards/equation_reward_func': 0.18229167046956718, 'reward': 1.1562500335276127, 'reward_std': 0.32843311317265034, 'kl': 0.03202056884765625, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.05727645898059506, 'learning_rate': 4.869781116505767e-07, 'completion_length': 388.78125762939453, 'rewards/format_reward_func': 0.9661458544433117, 'rewards/equation_reward_func': 0.13802083651535213, 'reward': 1.1041667088866234, 'reward_std': 0.2723693288862705, 'kl': 0.0331878662109375, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.09046335674469716, 'learning_rate': 4.860229298308213e-07, 'completion_length': 362.24480056762695, 'rewards/format_reward_func': 0.9739583432674408, 'rewards/equation_reward_func': 0.1770833395421505, 'reward': 1.1510417088866234, 'reward_std': 0.28355614794418216, 'kl': 0.03754425048828125, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.06925306221834628, 'learning_rate': 4.850349494729863e-07, 'completion_length': 350.78125953674316, 'rewards/format_reward_func': 0.9739583432674408, 'rewards/equation_reward_func': 0.18229167349636555, 'reward': 1.1562500447034836, 'reward_std': 0.2867942024022341, 'kl': 0.04071044921875, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.09721093672531929, 'learning_rate': 4.840143078701366e-07, 'completion_length': 362.84375762939453, 'rewards/format_reward_func': 0.9895833395421505, 'rewards/equation_reward_func': 0.1848958374466747, 'reward': 1.1744791939854622, 'reward_std': 0.2696881527081132, 'kl': 0.0429229736328125, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.10916362044375498, 'learning_rate': 4.829611468540532e-07, 'completion_length': 354.7057361602783, 'rewards/format_reward_func': 0.9817708507180214, 'rewards/equation_reward_func': 0.22656250814907253, 'reward': 1.2083333730697632, 'reward_std': 0.28033025143668056, 'kl': 0.042877197265625, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.09706544984987932, 'learning_rate': 4.818756127755237e-07, 'completion_length': 379.1692867279053, 'rewards/format_reward_func': 0.9687500186264515, 'rewards/equation_reward_func': 0.19010417303070426, 'reward': 1.158854216337204, 'reward_std': 0.2827126863412559, 'kl': 0.04290771484375, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.07945701413114997, 'learning_rate': 4.80757856484005e-07, 'completion_length': 384.53907585144043, 'rewards/format_reward_func': 0.9817708469927311, 'rewards/equation_reward_func': 0.18489583651535213, 'reward': 1.1666666939854622, 'reward_std': 0.2724973177537322, 'kl': 0.0478973388671875, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': 0.08016293181417085, 'learning_rate': 4.796080333066612e-07, 'completion_length': 383.513032913208, 'rewards/format_reward_func': 0.9687500149011612, 'rewards/equation_reward_func': 0.12760416907258332, 'reward': 1.096354205161333, 'reward_std': 0.2397893271408975, 'kl': 0.0490875244140625, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09813907643408444, 'learning_rate': 4.784263030267781e-07, 'completion_length': 321.99740409851074, 'rewards/format_reward_func': 0.9921875037252903, 'rewards/equation_reward_func': 0.26302084303461015, 'reward': 1.2552083767950535, 'reward_std': 0.32858877582475543, 'kl': 0.0574493408203125, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09798469213644408, 'learning_rate': 4.772128298615595e-07, 'completion_length': 340.09115409851074, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.23437500605359674, 'reward': 1.2213542088866234, 'reward_std': 0.2911784849129617, 'kl': 0.059661865234375, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09318598136662476, 'learning_rate': 4.759677824393069e-07, 'completion_length': 336.96355056762695, 'rewards/format_reward_func': 0.9895833432674408, 'rewards/equation_reward_func': 0.28385417396202683, 'reward': 1.2734375447034836, 'reward_std': 0.30669131269678473, 'kl': 0.0648345947265625, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09228291313223347, 'learning_rate': 4.7469133377598694e-07, 'completion_length': 339.70313358306885, 'rewards/format_reward_func': 0.9791666828095913, 'rewards/equation_reward_func': 0.29687500931322575, 'reward': 1.276041716337204, 'reward_std': 0.3335740827023983, 'kl': 0.0647125244140625, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09273540795625364, 'learning_rate': 4.7338366125118774e-07, 'completion_length': 338.43230056762695, 'rewards/format_reward_func': 0.9921875074505806, 'rewards/equation_reward_func': 0.25781250605359674, 'reward': 1.2500000447034836, 'reward_std': 0.2577659273520112, 'kl': 0.06732177734375, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09764466982478724, 'learning_rate': 4.7204494658346994e-07, 'completion_length': 361.39844512939453, 'rewards/format_reward_func': 0.979166679084301, 'rewards/equation_reward_func': 0.23958333884365857, 'reward': 1.2187500298023224, 'reward_std': 0.283636471722275, 'kl': 0.0656280517578125, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.0942415419119853, 'learning_rate': 4.7067537580511454e-07, 'completion_length': 334.5234498977661, 'rewards/format_reward_func': 0.9895833432674408, 'rewards/equation_reward_func': 0.2526041748933494, 'reward': 1.242187537252903, 'reward_std': 0.29148926585912704, 'kl': 0.07354736328125, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.09365944041743533, 'learning_rate': 4.6927513923627124e-07, 'completion_length': 364.8307418823242, 'rewards/format_reward_func': 0.9713541865348816, 'rewards/equation_reward_func': 0.17968750558793545, 'reward': 1.1510416977107525, 'reward_std': 0.25253914669156075, 'kl': 0.077880859375, 'epoch': 0.05}
+{'loss': 0.0001, 'grad_norm': 0.088204613443165, 'learning_rate': 4.678444314585107e-07, 'completion_length': 359.14323806762695, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.25520833767950535, 'reward': 1.2421875149011612, 'reward_std': 0.23985876934602857, 'kl': 0.073150634765625, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.0964686482655295, 'learning_rate': 4.6638345128778526e-07, 'completion_length': 355.6979274749756, 'rewards/format_reward_func': 0.9817708432674408, 'rewards/equation_reward_func': 0.24739584210328758, 'reward': 1.2291667014360428, 'reward_std': 0.257727506570518, 'kl': 0.072998046875, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.11548587960403421, 'learning_rate': 4.6489240174680026e-07, 'completion_length': 365.6198043823242, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.24479167140088975, 'reward': 1.231770858168602, 'reward_std': 0.2965164468623698, 'kl': 0.072601318359375, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.09487330075276043, 'learning_rate': 4.633714900368018e-07, 'completion_length': 334.3932399749756, 'rewards/format_reward_func': 0.9843750111758709, 'rewards/equation_reward_func': 0.27343750675208867, 'reward': 1.257812537252903, 'reward_std': 0.2814012188464403, 'kl': 0.081878662109375, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.0840241947168932, 'learning_rate': 4.6182092750878285e-07, 'completion_length': 404.7916793823242, 'rewards/format_reward_func': 0.9635416753590107, 'rewards/equation_reward_func': 0.22135417140088975, 'reward': 1.1848958693444729, 'reward_std': 0.25949191115796566, 'kl': 0.078460693359375, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.10559986688950687, 'learning_rate': 4.6024092963411404e-07, 'completion_length': 336.4140729904175, 'rewards/format_reward_func': 0.9843750111758709, 'rewards/equation_reward_func': 0.39583334838971496, 'reward': 1.3802083805203438, 'reward_std': 0.34107902785763144, 'kl': 0.085723876953125, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.0935033150437384, 'learning_rate': 4.586317159746e-07, 'completion_length': 364.4114685058594, 'rewards/format_reward_func': 0.9843750149011612, 'rewards/equation_reward_func': 0.36979167629033327, 'reward': 1.354166716337204, 'reward_std': 0.3378868387080729, 'kl': 0.082672119140625, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.08187093444273891, 'learning_rate': 4.569935101519692e-07, 'completion_length': 415.14844703674316, 'rewards/format_reward_func': 0.9661458507180214, 'rewards/equation_reward_func': 0.22395833837799728, 'reward': 1.1901041939854622, 'reward_std': 0.2829837240278721, 'kl': 0.07830810546875, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.0845669494359146, 'learning_rate': 4.5532653981679803e-07, 'completion_length': 374.7239637374878, 'rewards/format_reward_func': 0.9713541828095913, 'rewards/equation_reward_func': 0.3489583390764892, 'reward': 1.3203125298023224, 'reward_std': 0.2773928274400532, 'kl': 0.08697509765625, 'epoch': 0.06}
+{'loss': 0.0001, 'grad_norm': 0.07854227988608542, 'learning_rate': 4.536310366168763e-07, 'completion_length': 417.880220413208, 'rewards/format_reward_func': 0.955729179084301, 'rewards/equation_reward_func': 0.268229175824672, 'reward': 1.2239583693444729, 'reward_std': 0.29743466060608625, 'kl': 0.087188720703125, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.08686895195536301, 'learning_rate': 4.5190723616501627e-07, 'completion_length': 412.82032012939453, 'rewards/format_reward_func': 0.9739583432674408, 'rewards/equation_reward_func': 0.369791679084301, 'reward': 1.343750037252903, 'reward_std': 0.319417976308614, 'kl': 0.09136962890625, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.086357231362892, 'learning_rate': 4.5015537800631126e-07, 'completion_length': 400.638032913208, 'rewards/format_reward_func': 0.9635416865348816, 'rewards/equation_reward_func': 0.3229166744276881, 'reward': 1.286458358168602, 'reward_std': 0.3257316593080759, 'kl': 0.09637451171875, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.07191914745732926, 'learning_rate': 4.4837570558484785e-07, 'completion_length': 431.8776168823242, 'rewards/format_reward_func': 0.9713541828095913, 'rewards/equation_reward_func': 0.2890625116415322, 'reward': 1.2604167126119137, 'reward_std': 0.24831634247675538, 'kl': 0.09246826171875, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.09603227245392293, 'learning_rate': 4.4656846620987555e-07, 'completion_length': 398.18230056762695, 'rewards/format_reward_func': 0.9687500149011612, 'rewards/equation_reward_func': 0.338541675824672, 'reward': 1.3072916977107525, 'reward_std': 0.27179777389392257, 'kl': 0.105010986328125, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.09633216957475048, 'learning_rate': 4.4473391102144045e-07, 'completion_length': 356.79427909851074, 'rewards/format_reward_func': 0.9843750111758709, 'rewards/equation_reward_func': 0.44531250931322575, 'reward': 1.4296875298023224, 'reward_std': 0.35770728858187795, 'kl': 0.113922119140625, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.08134183337506078, 'learning_rate': 4.4287229495548573e-07, 'completion_length': 387.33595275878906, 'rewards/format_reward_func': 0.966145858168602, 'rewards/equation_reward_func': 0.39322917512618005, 'reward': 1.3593750447034836, 'reward_std': 0.26289293449372053, 'kl': 0.105499267578125, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.08464967776493791, 'learning_rate': 4.4098387670842463e-07, 'completion_length': 414.31772232055664, 'rewards/format_reward_func': 0.9817708469927311, 'rewards/equation_reward_func': 0.34375000884756446, 'reward': 1.3255208730697632, 'reward_std': 0.30957040283828974, 'kl': 0.10577392578125, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.08385198544964018, 'learning_rate': 4.390689187011917e-07, 'completion_length': 400.216157913208, 'rewards/format_reward_func': 0.9687500186264515, 'rewards/equation_reward_func': 0.3776041781529784, 'reward': 1.3463542088866234, 'reward_std': 0.28795562917366624, 'kl': 0.13946533203125, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.06950304504696331, 'learning_rate': 4.3712768704277524e-07, 'completion_length': 408.2291736602783, 'rewards/format_reward_func': 0.9687500186264515, 'rewards/equation_reward_func': 0.3541666765231639, 'reward': 1.3229167088866234, 'reward_std': 0.2460752036422491, 'kl': 0.130218505859375, 'epoch': 0.07}
+{'loss': 0.0001, 'grad_norm': 0.07709856175146766, 'learning_rate': 4.3516045149323865e-07, 'completion_length': 401.02084255218506, 'rewards/format_reward_func': 0.9661458507180214, 'rewards/equation_reward_func': 0.3802083460614085, 'reward': 1.346354205161333, 'reward_std': 0.2932120831683278, 'kl': 0.115814208984375, 'epoch': 0.08}
+{'loss': 0.0001, 'grad_norm': 0.08855074590738135, 'learning_rate': 4.3316748542623306e-07, 'completion_length': 400.48438835144043, 'rewards/format_reward_func': 0.9739583507180214, 'rewards/equation_reward_func': 0.39843751140870154, 'reward': 1.3723958805203438, 'reward_std': 0.2826624624431133, 'kl': 0.127349853515625, 'epoch': 0.08}
+{'loss': 0.0001, 'grad_norm': 0.07047728870046888, 'learning_rate': 4.3114906579100854e-07, 'completion_length': 391.4062604904175, 'rewards/format_reward_func': 0.9661458469927311, 'rewards/equation_reward_func': 0.32031250884756446, 'reward': 1.2864583656191826, 'reward_std': 0.26531922072172165, 'kl': 0.1226806640625, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.0806151942404237, 'learning_rate': 4.2910547307392856e-07, 'completion_length': 355.0547037124634, 'rewards/format_reward_func': 0.971354179084301, 'rewards/equation_reward_func': 0.44010417675599456, 'reward': 1.4114583693444729, 'reward_std': 0.24824147624894977, 'kl': 0.151885986328125, 'epoch': 0.08}
+{'loss': 0.0001, 'grad_norm': 0.09226325112966961, 'learning_rate': 4.270369912594924e-07, 'completion_length': 378.9479274749756, 'rewards/format_reward_func': 0.973958358168602, 'rewards/equation_reward_func': 0.3645833428017795, 'reward': 1.3385417014360428, 'reward_std': 0.24680238356813788, 'kl': 0.149993896484375, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.10687383331212037, 'learning_rate': 4.249439077908718e-07, 'completion_length': 337.44011402130127, 'rewards/format_reward_func': 0.9817708507180214, 'rewards/equation_reward_func': 0.38541667559184134, 'reward': 1.3671875521540642, 'reward_std': 0.1823582942597568, 'kl': 0.15887451171875, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.10498033168306505, 'learning_rate': 4.228265135299669e-07, 'completion_length': 336.2552156448364, 'rewards/format_reward_func': 0.971354179084301, 'rewards/equation_reward_func': 0.3802083469927311, 'reward': 1.3515625521540642, 'reward_std': 0.20870624389499426, 'kl': 0.1610107421875, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.0909884669975687, 'learning_rate': 4.206851027169871e-07, 'completion_length': 346.3880281448364, 'rewards/format_reward_func': 0.9765625149011612, 'rewards/equation_reward_func': 0.3229166737291962, 'reward': 1.2994791977107525, 'reward_std': 0.2090055043809116, 'kl': 0.162841796875, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.13251782802234208, 'learning_rate': 4.185199729295625e-07, 'completion_length': 308.42709255218506, 'rewards/format_reward_func': 0.9843750149011612, 'rewards/equation_reward_func': 0.4375000149011612, 'reward': 1.4218750447034836, 'reward_std': 0.2578795519657433, 'kl': 0.185546875, 'epoch': 0.08}
+{'loss': 0.0002, 'grad_norm': 0.09773047381731743, 'learning_rate': 4.163314250413913e-07, 'completion_length': 346.19532203674316, 'rewards/format_reward_func': 0.9739583469927311, 'rewards/equation_reward_func': 0.33333334303461015, 'reward': 1.307291716337204, 'reward_std': 0.26577778719365597, 'kl': 0.17413330078125, 'epoch': 0.09}
+{'loss': 0.0004, 'grad_norm': 0.09624392196760566, 'learning_rate': 4.1411976318042976e-07, 'completion_length': 291.3750057220459, 'rewards/format_reward_func': 0.971354179084301, 'rewards/equation_reward_func': 0.4531250111758709, 'reward': 1.4244791977107525, 'reward_std': 0.21937065245583653, 'kl': 0.4072265625, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.09590114849478469, 'learning_rate': 4.1188529468662904e-07, 'completion_length': 276.8619909286499, 'rewards/format_reward_func': 0.9843750037252903, 'rewards/equation_reward_func': 0.40364584513008595, 'reward': 1.3880208693444729, 'reward_std': 0.17357062688097358, 'kl': 0.188232421875, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.10586202494296253, 'learning_rate': 4.096283300692267e-07, 'completion_length': 310.7812604904175, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.4218750176951289, 'reward': 1.4088542237877846, 'reward_std': 0.20889991708099842, 'kl': 0.1807861328125, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.06008375386824467, 'learning_rate': 4.073491829635971e-07, 'completion_length': 305.38282203674316, 'rewards/format_reward_func': 0.9947916716337204, 'rewards/equation_reward_func': 0.34635417768731713, 'reward': 1.3411458730697632, 'reward_std': 0.1668513910844922, 'kl': 0.22723388671875, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.10238347095113497, 'learning_rate': 4.0504817008766767e-07, 'completion_length': 312.7760486602783, 'rewards/format_reward_func': 0.9791666828095913, 'rewards/equation_reward_func': 0.3489583423361182, 'reward': 1.328125037252903, 'reward_std': 0.195348905865103, 'kl': 0.19775390625, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.08087535577336724, 'learning_rate': 4.0272561119790625e-07, 'completion_length': 293.23438262939453, 'rewards/format_reward_func': 0.9921875074505806, 'rewards/equation_reward_func': 0.4401041716337204, 'reward': 1.4322916865348816, 'reward_std': 0.18554408568888903, 'kl': 0.19580078125, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.08659540707306836, 'learning_rate': 4.003818290448876e-07, 'completion_length': 303.76302909851074, 'rewards/format_reward_func': 0.9791666828095913, 'rewards/equation_reward_func': 0.39062500814907253, 'reward': 1.369791705161333, 'reward_std': 0.20524928299710155, 'kl': 0.1964111328125, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.07342633788757466, 'learning_rate': 3.980171493284418e-07, 'completion_length': 289.38282108306885, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.393229172565043, 'reward': 1.3802083656191826, 'reward_std': 0.17667264491319656, 'kl': 0.20391845703125, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.10931946114988857, 'learning_rate': 3.956319006523947e-07, 'completion_length': 271.61979961395264, 'rewards/format_reward_func': 0.9947916679084301, 'rewards/equation_reward_func': 0.4583333469927311, 'reward': 1.4531250521540642, 'reward_std': 0.23058304097503424, 'kl': 0.1944580078125, 'epoch': 0.09}
+{'loss': 0.0002, 'grad_norm': 0.08078048290384138, 'learning_rate': 3.932264144789038e-07, 'completion_length': 307.20313453674316, 'rewards/format_reward_func': 0.9895833432674408, 'rewards/equation_reward_func': 0.3463541732635349, 'reward': 1.335937537252903, 'reward_std': 0.1941452892497182, 'kl': 0.19775390625, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.09171284270237788, 'learning_rate': 3.9080102508239713e-07, 'completion_length': 268.3828229904175, 'rewards/format_reward_func': 0.986979179084301, 'rewards/equation_reward_func': 0.4635416760575026, 'reward': 1.4505208656191826, 'reward_std': 0.225947389844805, 'kl': 0.21044921875, 'epoch': 0.1}
+{'loss': 0.0003, 'grad_norm': 0.09981249570007171, 'learning_rate': 3.8835606950312126e-07, 'completion_length': 288.66146755218506, 'rewards/format_reward_func': 0.9765625186264515, 'rewards/equation_reward_func': 0.36197917675599456, 'reward': 1.3385417088866234, 'reward_std': 0.21218714863061905, 'kl': 0.286865234375, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.10079271987977885, 'learning_rate': 3.858918875003053e-07, 'completion_length': 270.84896659851074, 'rewards/format_reward_func': 0.9765625149011612, 'rewards/equation_reward_func': 0.48697917722165585, 'reward': 1.4635417088866234, 'reward_std': 0.2630322854965925, 'kl': 0.21185302734375, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.13767554935071, 'learning_rate': 3.8340882150494644e-07, 'completion_length': 296.4010534286499, 'rewards/format_reward_func': 0.9791666828095913, 'rewards/equation_reward_func': 0.34375000931322575, 'reward': 1.3229167014360428, 'reward_std': 0.2524246955290437, 'kl': 0.224365234375, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.09355060692603315, 'learning_rate': 3.8090721657222497e-07, 'completion_length': 284.36198806762695, 'rewards/format_reward_func': 0.979166679084301, 'rewards/equation_reward_func': 0.3723958432674408, 'reward': 1.3515625521540642, 'reward_std': 0.19242694089189172, 'kl': 0.22100830078125, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.0863784031172911, 'learning_rate': 3.783874203335542e-07, 'completion_length': 273.08073711395264, 'rewards/format_reward_func': 0.9739583469927311, 'rewards/equation_reward_func': 0.4401041795499623, 'reward': 1.4140625447034836, 'reward_std': 0.25637464271858335, 'kl': 0.23101806640625, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.12155850317289905, 'learning_rate': 3.758497829482721e-07, 'completion_length': 281.59375953674316, 'rewards/format_reward_func': 0.9661458507180214, 'rewards/equation_reward_func': 0.42708334885537624, 'reward': 1.3932292014360428, 'reward_std': 0.23996021365746856, 'kl': 0.23272705078125, 'epoch': 0.1}
+{'loss': 0.0003, 'grad_norm': 0.0802468060073299, 'learning_rate': 3.732946570549824e-07, 'completion_length': 295.8046941757202, 'rewards/format_reward_func': 0.963541679084301, 'rewards/equation_reward_func': 0.32552084350027144, 'reward': 1.2890625335276127, 'reward_std': 0.23183101322501898, 'kl': 0.2532958984375, 'epoch': 0.1}
+{'loss': 0.0002, 'grad_norm': 0.1253400848023946, 'learning_rate': 3.7072239772255064e-07, 'completion_length': 253.32031726837158, 'rewards/format_reward_func': 0.9713541753590107, 'rewards/equation_reward_func': 0.5104166818782687, 'reward': 1.4817708805203438, 'reward_std': 0.2665468896739185, 'kl': 0.236572265625, 'epoch': 0.11}
+{'loss': 0.0003, 'grad_norm': 0.11270151138125548, 'learning_rate': 3.681333624007623e-07, 'completion_length': 280.2317771911621, 'rewards/format_reward_func': 0.9557291828095913, 'rewards/equation_reward_func': 0.4218750095460564, 'reward': 1.3776042014360428, 'reward_std': 0.26111629605293274, 'kl': 0.326904296875, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.10729436027125867, 'learning_rate': 3.655279108706507e-07, 'completion_length': 243.27344226837158, 'rewards/format_reward_func': 0.9739583507180214, 'rewards/equation_reward_func': 0.5833333414047956, 'reward': 1.5572917088866234, 'reward_std': 0.22427759412676096, 'kl': 0.239013671875, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.09120941492781867, 'learning_rate': 3.6290640519450073e-07, 'completion_length': 260.4661531448364, 'rewards/format_reward_func': 0.9635416865348816, 'rewards/equation_reward_func': 0.47395834792405367, 'reward': 1.4375000447034836, 'reward_std': 0.2429597293958068, 'kl': 0.23870849609375, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.08425659741738199, 'learning_rate': 3.6026920966553493e-07, 'completion_length': 335.880220413208, 'rewards/format_reward_func': 0.9427083544433117, 'rewards/equation_reward_func': 0.30468750768341124, 'reward': 1.2473958618938923, 'reward_std': 0.27547848131507635, 'kl': 0.242919921875, 'epoch': 0.11}
+{'loss': 0.0004, 'grad_norm': 0.146786813349331, 'learning_rate': 3.5761669075729077e-07, 'completion_length': 314.00261211395264, 'rewards/format_reward_func': 0.9322916902601719, 'rewards/equation_reward_func': 0.3697916781529784, 'reward': 1.3020833693444729, 'reward_std': 0.25273492699489, 'kl': 0.4429931640625, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.10188115348254967, 'learning_rate': 3.5494921707269364e-07, 'completion_length': 293.64063453674316, 'rewards/format_reward_func': 0.9557291828095913, 'rewards/equation_reward_func': 0.4427083428017795, 'reward': 1.3984375447034836, 'reward_std': 0.21338157216086984, 'kl': 0.22100830078125, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.11684885237190401, 'learning_rate': 3.52267159292835e-07, 'completion_length': 283.611985206604, 'rewards/format_reward_func': 0.9687500186264515, 'rewards/equation_reward_func': 0.41666668234393, 'reward': 1.3854167088866234, 'reward_std': 0.23524035420268774, 'kl': 0.21527099609375, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.07766127374489178, 'learning_rate': 3.495708901254609e-07, 'completion_length': 297.47917461395264, 'rewards/format_reward_func': 0.9609375223517418, 'rewards/equation_reward_func': 0.38541667722165585, 'reward': 1.346354216337204, 'reward_std': 0.24187164288014174, 'kl': 0.20947265625, 'epoch': 0.11}
+{'loss': 0.0002, 'grad_norm': 0.09809327738498505, 'learning_rate': 3.4686078425317964e-07, 'completion_length': 294.6093850135803, 'rewards/format_reward_func': 0.9739583432674408, 'rewards/equation_reward_func': 0.40885418048128486, 'reward': 1.3828125409781933, 'reward_std': 0.23985462496057153, 'kl': 0.2144775390625, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.09398026347347016, 'learning_rate': 3.441372182813946e-07, 'completion_length': 286.94011306762695, 'rewards/format_reward_func': 0.9609375149011612, 'rewards/equation_reward_func': 0.4088541781529784, 'reward': 1.3697917014360428, 'reward_std': 0.25860744481906295, 'kl': 0.20440673828125, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.09504447055109722, 'learning_rate': 3.4140057068596924e-07, 'completion_length': 311.7526111602783, 'rewards/format_reward_func': 0.958333358168602, 'rewards/equation_reward_func': 0.2890625102445483, 'reward': 1.2473958730697632, 'reward_std': 0.20104962727054954, 'kl': 0.2022705078125, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.10717735235937068, 'learning_rate': 3.3865122176063385e-07, 'completion_length': 258.1171979904175, 'rewards/format_reward_func': 0.9531250111758709, 'rewards/equation_reward_func': 0.5234375151339918, 'reward': 1.4765625335276127, 'reward_std': 0.25881623290479183, 'kl': 0.21533203125, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.07386584972513918, 'learning_rate': 3.3588955356413796e-07, 'completion_length': 308.55990409851074, 'rewards/format_reward_func': 0.9661458544433117, 'rewards/equation_reward_func': 0.22395834000781178, 'reward': 1.190104190260172, 'reward_std': 0.1906686364673078, 'kl': 0.21844482421875, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.14422182995718455, 'learning_rate': 3.3311594986715806e-07, 'completion_length': 273.2031316757202, 'rewards/format_reward_func': 0.9531250223517418, 'rewards/equation_reward_func': 0.5052083479240537, 'reward': 1.4583333693444729, 'reward_std': 0.27993327798321843, 'kl': 0.2032470703125, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.09536811037162111, 'learning_rate': 3.303307960989683e-07, 'completion_length': 285.50782108306885, 'rewards/format_reward_func': 0.9635416828095913, 'rewards/equation_reward_func': 0.41406251676380634, 'reward': 1.3776042200624943, 'reward_std': 0.2506763762794435, 'kl': 0.22100830078125, 'epoch': 0.12}
+{'loss': 0.0002, 'grad_norm': 0.0978706347253551, 'learning_rate': 3.275344792938791e-07, 'completion_length': 274.10417652130127, 'rewards/format_reward_func': 0.9531250223517418, 'rewards/equation_reward_func': 0.46875000558793545, 'reward': 1.4218750298023224, 'reward_std': 0.23493976239115, 'kl': 0.24725341796875, 'epoch': 0.12}

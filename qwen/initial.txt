@@ -19,6 +19,8 @@ user
 Using the numbers [44, 19, 35], create an equation that equals 98. You can use basic arithmetic operations (+, -, *, /) one or multiple times but each number can only be used once. Show your work in <think> </think> tags. And return the final equation in <answer> </answer> tags, for example <answer> (1 + 2) / 3 </answer>. Think step by step inside <think> tags.
 assistant
 Let me solve this step by step.
+
+
 <think>
 assistant
 First, I'll consider the possible operations and how they could combine these numbers to reach 98. The goal is to make use of all three numbers: 44, 19, and 35. 
